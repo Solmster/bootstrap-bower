@@ -6795,7 +6795,7 @@ angular.module("uib/template/tabs/tab.html", []).run(["$templateCache", function
 angular.module("uib/template/tabs/tabset.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("uib/template/tabs/tabset.html",
     "<div>\n" +
-    "  <ul class=\"nav nav-{{type || 'tabs'}}\" ng-class=\"{'nav-stacked': vertical, 'nav-justified': justified}\" ng-transclude></ul>\n" +
+    "  <div><ul class=\"nav nav-{{type || 'tabs'}}\" ng-class=\"{'nav-stacked': vertical, 'nav-justified': justified}\" ng-transclude></ul></div>\n" +
     "  <div class=\"tab-content\">\n" +
     "    <div class=\"tab-pane\" \n" +
     "         ng-repeat=\"tab in tabs\" \n" +
